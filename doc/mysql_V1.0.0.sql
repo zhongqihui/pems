@@ -44,7 +44,7 @@ CREATE TABLE `bills_info` (
   `insert_time` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '账单插入时间',
   `update_time` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '账单修改时间',
   `note` varchar(1000) DEFAULT NULL COMMENT '账单说明',
-  `address` varchar(255) DEFAULT NULL COMMENT '发生账单的地点',
+  `address` varchar(255) DEFAULT NULL COMMENT '发生账单地点',
   PRIMARY KEY (`sn`),
   UNIQUE KEY `bills_info_id` (`bills_id`),
   KEY `bills_info_insert_time` (`insert_time`),
